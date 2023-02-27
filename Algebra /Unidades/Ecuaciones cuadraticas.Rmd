@@ -1,0 +1,209 @@
+---
+title: "Ecuaciones cuadráticas"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+Las ecuaciones cuadráticas, también son conocidas como ecuaciones de segundo grado.
+
+Estas tienen una variable elevada al cuadrado y se encontraran dos resultados correctos. \
+Mientras que la incógnita o variable desconocida se encuentre elevada al cuadrado.
+
+$$
+ax^2 + bx + c = 0 
+$$
+
+**a, b, c son constantes, ademas a es diferente a 0.**
+
+-   $ax^2$ -\> término cuadratico
+
+-   bx -\> término lineal
+
+-   c -\> término independiente (también llamado constante)
+
+Casos especiales:
+
+1.  **Ecuaciones incompletas de segundo grado**
+
+$ax^2 + bx = 0$ y la constante c es igual a 0.
+
+2.  **Ecuaciones simples de segundo grado**
+
+$ax^2 + c = 0$, b = 0 y c es menos igual a 0.
+
+-   **Resolución**
+
+**La resolución dependera de la forma de la ecuación:**
+
+## **Ecuaciones incompletas de segundo grado.**
+
+1.  Factorización por factor común.
+
+$$
+ax^2 + bx = 0 
+$$
+
+$$
+x(ax + b) = 0
+$$
+
+2.  Ambos factores se igualan a cero.
+
+$$
+x = 0
+$$
+
+$$
+ax + b = 0
+$$
+
+3.  Las soluciones de la ecuación serán:
+
+$$
+x_{1} = 0
+$$
+
+$$
+x_{2} = - b/a
+$$
+
+**Ejemplo:**
+
+$$
+\begin{align*}
+3 x ^ 2 - 6x = 0 \\
+x (3x -6) = 0 \\
+x = 0 \\
+3x - 6 = 0
+\end{align*}
+$$
+
+-   Las soluciones serian:
+
+$$
+x_{1} = 0 \\
+X_{2} = 2
+$$
+
+## **Ecuaciones simples de segundo grado.**
+
+1.  Despejamos la variable:
+
+$$
+x^2 = -c/a \\
+x = +- \sqrt{-c/a}
+$$
+
+2.  Las soluciones de la ecuación serán simétricas:
+
+$$
+x_{1} = + \sqrt{-c/a} \\
+x_{2} = - \sqrt{-c/a}
+$$
+
+**Ejemplo:**
+
+$$
+2x^2 - 8 = 0
+$$
+
+-   Se despeja la variable:
+
+$$
+x^2 = 8/2 \\
+x = +- \sqrt{4}
+$$
+
+-   Las soluciones de la ecuación serán:
+
+$$
+x_{1} = +2 \\
+x_{2} = -2
+$$
+
+## **Ecuación cuadratica en su forma general.**
+
+1.  La ecuación debe expresarse en su forma general e identificar los coeficientes **a, b y c,** para posteriormente sustituirlos en la fórmula general.
+
+$$
+x = \frac{-b +- \sqrt{b^2} - 4ac}{2a}
+$$
+
+-   ***La fórmula general es aplicable a los casos especiales de una ecuación cuadrática.***
+
+2.  Se resuelve algebraicamente para obtener las dos soluciones:
+
+$$
+x_{1} =  \frac{-b + \sqrt{b^2 - 4ac}}{2a}\\
+x_{2} =  \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+$$
+
+### Radicando
+
+Al radicando se le conoce con el nombre de discriminante, y a partir de sus análisis es posible predecir la solución de la ecuación cuadrática.
+
+-   Si $b^2 - 4ac = 0$, la ecuación tendrá una sola solución.
+
+-   Si $b^2 - 4ac > 0$, la ecuación tendrá dos soluciones.
+
+-   Si $b^2 - 4ac < 0$, la ecuación no tendrá soluciones reales.
+
+**Ejemplo:**
+
+$$
+8x^2 - 2x -1 = 0 \\
+a = 8, b =-2, c = -1 \\
+x = \frac{-(-2) +- \sqrt{(-2)^2-4(8)(-1)}}{2(8)} \\
+x = \frac{2 +- 6}{16} \\
+x_{1} = \frac{2 + 6}{16}\\
+x_{1} = \frac{1}{2}\\
+x_{2} = \frac{2-6}{16}\\
+x_{2} = - \frac{1}{4}
+$$
+
+### Ejercicios
+
+La ecuación es $2x^2 + 8x = 0$.
+
+**La solucion es:**
+
+$$ 
+2x^2 + 8x = 0\\
+2x(x + 4) = 0\\
+2x = 0\\
+x = 0/2\\
+x_{1} = 0\\
+x + 4 = 0\\
+x = 0 -4\\
+x_{2} = -4\\
+$$
+
+La ecuación es $x^2 - \frac{1}{4} = 0$
+
+**La solución es:**
+
+$$
+x^2-\frac{1}{4}= 0\\
+x = +-\sqrt{ \frac{1}{4}}\\
+x = \frac{1}{2}\\
+x_{1} = -0.5\\
+x_{2} = 0.5
+$$
+
+La ecuación es $x^2-9x+18 = 0$
+
+**La solución es:**
+
+Fórmula general es $x = \frac{-b +- \sqrt{b^2} - 4ac}{2a}$
+
+$$
+a = 1, b = -9, c = 18\\
+x = \frac{9+-\sqrt{-9^2-4(1)(18)}}{2(1)}\\
+x = \frac{9 +- \sqrt{81-72}}{2}\\
+x = \frac{9-3}{2}\\
+x_{1} = 6\\
+x_{1} = 3\\
+x_{2} = 12\\
+x_{2} = 6
+$$

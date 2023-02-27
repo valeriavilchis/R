@@ -11,7 +11,7 @@
 
 
 
-<title>R Notebook</title>
+<title>Ecuaciones cuadráticas</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1746,37 +1746,217 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">R Notebook</h1>
+<h1 class="title toc-ignore">Ecuaciones cuadráticas</h1>
 
 </div>
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a>
-Notebook. When you execute code within the notebook, the results appear
-beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within
-the chunk or by placing your cursor inside it and pressing
-<em>Cmd+Shift+Enter</em>.</p>
+<p>Las ecuaciones cuadráticas, también son conocidas como ecuaciones de
+segundo grado.</p>
+<p>Estas tienen una variable elevada al cuadrado y se encontraran dos
+resultados correctos.<br />
+Mientras que la incógnita o variable desconocida se encuentre elevada al
+cuadrado.</p>
+<p><span class="math display">\[
+ax^2 + bx + c = 0
+\]</span></p>
+<p><strong>a, b, c son constantes, ademas a es diferente a
+0.</strong></p>
+<ul>
+<li><p><span class="math inline">\(ax^2\)</span> -&gt; término
+cuadratico</p></li>
+<li><p>bx -&gt; término lineal</p></li>
+<li><p>c -&gt; término independiente (también llamado
+constante)</p></li>
+</ul>
+<p>Casos especiales:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Ecuaciones incompletas de segundo grado</strong></li>
+</ol>
+<p><span class="math inline">\(ax^2 + bx = 0\)</span> y la constante c
+es igual a 0.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Ecuaciones simples de segundo grado</strong></li>
+</ol>
+<p><span class="math inline">\(ax^2 + c = 0\)</span>, b = 0 y c es menos
+igual a 0.</p>
+<ul>
+<li><strong>Resolución</strong></li>
+</ul>
+<p><strong>La resolución dependera de la forma de la
+ecuación:</strong></p>
+<div id="ecuaciones-incompletas-de-segundo-grado." class="section level2">
+<h2><strong>Ecuaciones incompletas de segundo grado.</strong></h2>
+<ol style="list-style-type: decimal">
+<li>Factorización por factor común.</li>
+</ol>
+<p><span class="math display">\[
+ax^2 + bx = 0
+\]</span></p>
+<p><span class="math display">\[
+x(ax + b) = 0
+\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Ambos factores se igualan a cero.</li>
+</ol>
+<p><span class="math display">\[
+x = 0
+\]</span></p>
+<p><span class="math display">\[
+ax + b = 0
+\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Las soluciones de la ecuación serán:</li>
+</ol>
+<p><span class="math display">\[
+x_{1} = 0
+\]</span></p>
+<p><span class="math display">\[
+x_{2} = - b/a
+\]</span></p>
+<p><strong>Ejemplo:</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+3 x ^ 2 - 6x = 0 \\
+x (3x -6) = 0 \\
+x = 0 \\
+3x - 6 = 0
+\end{align*}
+\]</span></p>
+<ul>
+<li>Las soluciones serian:</li>
+</ul>
+<p><span class="math display">\[
+x_{1} = 0 \\
+X_{2} = 2
+\]</span></p>
+</div>
+<div id="ecuaciones-simples-de-segundo-grado." class="section level2">
+<h2><strong>Ecuaciones simples de segundo grado.</strong></h2>
+<ol style="list-style-type: decimal">
+<li>Despejamos la variable:</li>
+</ol>
+<p><span class="math display">\[
+x^2 = -c/a \\
+x = +- \sqrt{-c/a}
+\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Las soluciones de la ecuación serán simétricas:</li>
+</ol>
+<p><span class="math display">\[
+x_{1} = + \sqrt{-c/a} \\
+x_{2} = - \sqrt{-c/a}
+\]</span></p>
+<p><strong>Ejemplo:</strong></p>
+<p><span class="math display">\[
+2x^2 - 8 = 0
+\]</span></p>
+<ul>
+<li>Se despeja la variable:</li>
+</ul>
+<p><span class="math display">\[
+x^2 = 8/2 \\
+x = +- \sqrt{4}
+\]</span></p>
+<ul>
+<li>Las soluciones de la ecuación serán:</li>
+</ul>
+<p><span class="math display">\[
+x_{1} = +2 \\
+x_{2} = -2
+\]</span></p>
+</div>
+<div id="ecuación-cuadratica-en-su-forma-general." class="section level2">
+<h2><strong>Ecuación cuadratica en su forma general.</strong></h2>
+<ol style="list-style-type: decimal">
+<li>La ecuación debe expresarse en su forma general e identificar los
+coeficientes <strong>a, b y c,</strong> para posteriormente sustituirlos
+en la fórmula general.</li>
+</ol>
+<p><span class="math display">\[
+x = \frac{-b +- \sqrt{b^2} - 4ac}{2a}
+\]</span></p>
+<ul>
+<li><strong><em>La fórmula general es aplicable a los casos especiales
+de una ecuación cuadrática.</em></strong></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Se resuelve algebraicamente para obtener las dos soluciones:</li>
+</ol>
+<p><span class="math display">\[
+x_{1} =  \frac{-b + \sqrt{b^2 - 4ac}}{2a}\\
+x_{2} =  \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<div id="radicando" class="section level3">
+<h3>Radicando</h3>
+<p>Al radicando se le conoce con el nombre de discriminante, y a partir
+de sus análisis es posible predecir la solución de la ecuación
+cuadrática.</p>
+<ul>
+<li><p>Si <span class="math inline">\(b^2 - 4ac = 0\)</span>, la
+ecuación tendrá una sola solución.</p></li>
+<li><p>Si <span class="math inline">\(b^2 - 4ac &gt; 0\)</span>, la
+ecuación tendrá dos soluciones.</p></li>
+<li><p>Si <span class="math inline">\(b^2 - 4ac &lt; 0\)</span>, la
+ecuación no tendrá soluciones reales.</p></li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<p><span class="math display">\[
+8x^2 - 2x -1 = 0 \\
+a = 8, b =-2, c = -1 \\
+x = \frac{-(-2) +- \sqrt{(-2)^2-4(8)(-1)}}{2(8)} \\
+x = \frac{2 +- 6}{16} \\
+x_{1} = \frac{2 + 6}{16}\\
+x_{1} = \frac{1}{2}\\
+x_{2} = \frac{2-6}{16}\\
+x_{2} = - \frac{1}{4}
+\]</span></p>
+</div>
+<div id="ejercicios" class="section level3">
+<h3>Ejercicios</h3>
+<p>La ecuación es <span class="math inline">\(2x^2 + 8x =
+0\)</span>.</p>
+<p><strong>La solucion es:</strong></p>
+<p><span class="math display">\[
+2x^2 + 8x = 0\\
+2x(x + 4) = 0\\
+2x = 0\\
+x = 0/2\\
+x_{1} = 0\\
+x + 4 = 0\\
+x = 0 -4\\
+x_{2} = -4\\
+\]</span></p>
+<p>La ecuación es <span class="math inline">\(x^2 - \frac{1}{4} =
+0\)</span></p>
+<p><strong>La solución es:</strong></p>
+<p><span class="math display">\[
+x^2-\frac{1}{4}= 0\\
+x = +-\sqrt{ \frac{1}{4}}\\
+x = \frac{1}{2}\\
+x_{1} = -0.5\\
+x_{2} = 0.5
+\]</span></p>
+<p>La ecuación es <span class="math inline">\(x^2-9x+18 = 0\)</span></p>
+<p><strong>La solución es:</strong></p>
+<p>Fórmula general es <span class="math inline">\(x = \frac{-b +-
+\sqrt{b^2} - 4ac}{2a}\)</span></p>
+<p><span class="math display">\[
+a = 1, b = -9, c = 18\\
+x = \frac{9+-\sqrt{-9^2-4(1)(18)}}{2(1)}\\
+x = \frac{9 +- \sqrt{81-72}}{2}\\
+x = \frac{9-3}{2}\\
+x_{1} = 6\\
+x_{1} = 3\\
+x_{2} = 12\\
+x_{2} = 6
+\]</span></p>
 <!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
-toolbar or by pressing <em>Cmd+Option+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and
-output will be saved alongside it (click the <em>Preview</em> button or
-press <em>Cmd+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the
-editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not
-run any R code chunks. Instead, the output of the chunk when it was last
-run in the editor is displayed.</p>
-<!-- rnb-text-end -->
+</div>
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KcGxvdChjYXJzKQpgYGAKCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDbWQrT3B0aW9uK0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDbWQrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4gCgpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRWN1YWNpb25lcyBjdWFkcsOhdGljYXMiCm91dHB1dDogaHRtbF9ub3RlYm9vawplZGl0b3Jfb3B0aW9uczogCiAgY2h1bmtfb3V0cHV0X3R5cGU6IGlubGluZQotLS0KCkxhcyBlY3VhY2lvbmVzIGN1YWRyw6F0aWNhcywgdGFtYmnDqW4gc29uIGNvbm9jaWRhcyBjb21vIGVjdWFjaW9uZXMgZGUgc2VndW5kbyBncmFkby4KCkVzdGFzIHRpZW5lbiB1bmEgdmFyaWFibGUgZWxldmFkYSBhbCBjdWFkcmFkbyB5IHNlIGVuY29udHJhcmFuIGRvcyByZXN1bHRhZG9zIGNvcnJlY3Rvcy4gXApNaWVudHJhcyBxdWUgbGEgaW5jw7Nnbml0YSBvIHZhcmlhYmxlIGRlc2Nvbm9jaWRhIHNlIGVuY3VlbnRyZSBlbGV2YWRhIGFsIGN1YWRyYWRvLgoKJCQKYXheMiArIGJ4ICsgYyA9IDAgCiQkCgoqKmEsIGIsIGMgc29uIGNvbnN0YW50ZXMsIGFkZW1hcyBhIGVzIGRpZmVyZW50ZSBhIDAuKioKCi0gICAkYXheMiQgLVw+IHTDqXJtaW5vIGN1YWRyYXRpY28KCi0gICBieCAtXD4gdMOpcm1pbm8gbGluZWFsCgotICAgYyAtXD4gdMOpcm1pbm8gaW5kZXBlbmRpZW50ZSAodGFtYmnDqW4gbGxhbWFkbyBjb25zdGFudGUpCgpDYXNvcyBlc3BlY2lhbGVzOgoKMS4gICoqRWN1YWNpb25lcyBpbmNvbXBsZXRhcyBkZSBzZWd1bmRvIGdyYWRvKioKCiRheF4yICsgYnggPSAwJCB5IGxhIGNvbnN0YW50ZSBjIGVzIGlndWFsIGEgMC4KCjIuICAqKkVjdWFjaW9uZXMgc2ltcGxlcyBkZSBzZWd1bmRvIGdyYWRvKioKCiRheF4yICsgYyA9IDAkLCBiID0gMCB5IGMgZXMgbWVub3MgaWd1YWwgYSAwLgoKLSAgICoqUmVzb2x1Y2nDs24qKgoKKipMYSByZXNvbHVjacOzbiBkZXBlbmRlcmEgZGUgbGEgZm9ybWEgZGUgbGEgZWN1YWNpw7NuOioqCgojIyAqKkVjdWFjaW9uZXMgaW5jb21wbGV0YXMgZGUgc2VndW5kbyBncmFkby4qKgoKMS4gIEZhY3Rvcml6YWNpw7NuIHBvciBmYWN0b3IgY29tw7puLgoKJCQKYXheMiArIGJ4ID0gMCAKJCQKCiQkCngoYXggKyBiKSA9IDAKJCQKCjIuICBBbWJvcyBmYWN0b3JlcyBzZSBpZ3VhbGFuIGEgY2Vyby4KCiQkCnggPSAwCiQkCgokJApheCArIGIgPSAwCiQkCgozLiAgTGFzIHNvbHVjaW9uZXMgZGUgbGEgZWN1YWNpw7NuIHNlcsOhbjoKCiQkCnhfezF9ID0gMAokJAoKJCQKeF97Mn0gPSAtIGIvYQokJAoKKipFamVtcGxvOioqCgokJApcYmVnaW57YWxpZ24qfQozIHggXiAyIC0gNnggPSAwIFxcCnggKDN4IC02KSA9IDAgXFwKeCA9IDDCoFxcCjN4IC0gNiA9IDAKXGVuZHthbGlnbip9CiQkCgotICAgTGFzIHNvbHVjaW9uZXMgc2VyaWFuOgoKJCQKeF97MX0gPSAwIFxcClhfezJ9ID0gMgokJAoKIyMgKipFY3VhY2lvbmVzIHNpbXBsZXMgZGUgc2VndW5kbyBncmFkby4qKgoKMS4gIERlc3BlamFtb3MgbGEgdmFyaWFibGU6CgokJAp4XjIgPSAtYy9hIFxcCnggPSArLSBcc3FydHstYy9hfQokJAoKMi4gIExhcyBzb2x1Y2lvbmVzIGRlIGxhIGVjdWFjacOzbiBzZXLDoW4gc2ltw6l0cmljYXM6CgokJAp4X3sxfSA9ICsgXHNxcnR7LWMvYX0gXFwKeF97Mn0gPSAtIFxzcXJ0ey1jL2F9CiQkCgoqKkVqZW1wbG86KioKCiQkCjJ4XjIgLSA4ID0gMAokJAoKLSAgIFNlIGRlc3BlamEgbGEgdmFyaWFibGU6CgokJAp4XjIgPSA4LzIgXFwKeCA9ICstIFxzcXJ0ezR9CiQkCgotICAgTGFzIHNvbHVjaW9uZXMgZGUgbGEgZWN1YWNpw7NuIHNlcsOhbjoKCiQkCnhfezF9ID0gKzIgXFwKeF97Mn0gPSAtMgokJAoKIyMgKipFY3VhY2nDs24gY3VhZHJhdGljYSBlbiBzdSBmb3JtYSBnZW5lcmFsLioqCgoxLiAgTGEgZWN1YWNpw7NuIGRlYmUgZXhwcmVzYXJzZSBlbiBzdSBmb3JtYSBnZW5lcmFsIGUgaWRlbnRpZmljYXIgbG9zIGNvZWZpY2llbnRlcyAqKmEsIGIgeSBjLCoqIHBhcmEgcG9zdGVyaW9ybWVudGUgc3VzdGl0dWlybG9zIGVuIGxhIGbDs3JtdWxhIGdlbmVyYWwuCgokJAp4ID0gXGZyYWN7LWIgKy0gXHNxcnR7Yl4yfSAtIDRhY317MmF9CiQkCgotICAgKioqTGEgZsOzcm11bGEgZ2VuZXJhbCBlcyBhcGxpY2FibGUgYSBsb3MgY2Fzb3MgZXNwZWNpYWxlcyBkZSB1bmEgZWN1YWNpw7NuIGN1YWRyw6F0aWNhLioqKgoKMi4gIFNlIHJlc3VlbHZlIGFsZ2VicmFpY2FtZW50ZSBwYXJhIG9idGVuZXIgbGFzIGRvcyBzb2x1Y2lvbmVzOgoKJCQKeF97MX0gPSAgXGZyYWN7LWIgKyBcc3FydHtiXjIgLSA0YWN9fXsyYX1cXAp4X3syfSA9ICBcZnJhY3stYiAtIFxzcXJ0e2JeMiAtIDRhY319ezJhfQokJAoKIyMjIFJhZGljYW5kbwoKQWwgcmFkaWNhbmRvIHNlIGxlIGNvbm9jZSBjb24gZWwgbm9tYnJlIGRlIGRpc2NyaW1pbmFudGUsIHkgYSBwYXJ0aXIgZGUgc3VzIGFuw6FsaXNpcyBlcyBwb3NpYmxlIHByZWRlY2lyIGxhIHNvbHVjacOzbiBkZSBsYSBlY3VhY2nDs24gY3VhZHLDoXRpY2EuCgotICAgU2kgJGJeMiAtIDRhYyA9IDAkLCBsYSBlY3VhY2nDs24gdGVuZHLDoSB1bmEgc29sYSBzb2x1Y2nDs24uCgotICAgU2kgJGJeMiAtIDRhYyA+IDAkLCBsYSBlY3VhY2nDs24gdGVuZHLDoSBkb3Mgc29sdWNpb25lcy4KCi0gICBTaSAkYl4yIC0gNGFjIDwgMCQsIGxhIGVjdWFjacOzbiBubyB0ZW5kcsOhIHNvbHVjaW9uZXMgcmVhbGVzLgoKKipFamVtcGxvOioqCgokJAo4eF4yIC0gMnggLTEgPSAwIFxcCmEgPSA4LCBiID0tMiwgYyA9IC0xIFxcCnggPSBcZnJhY3stKC0yKSArLSBcc3FydHsoLTIpXjItNCg4KSgtMSl9fXsyKDgpfSBcXAp4ID0gXGZyYWN7MiArLSA2fXsxNn0gXFwKeF97MX0gPSBcZnJhY3syICsgNn17MTZ9XFwKeF97MX0gPSBcZnJhY3sxfXsyfVxcCnhfezJ9ID0gXGZyYWN7Mi02fXsxNn1cXAp4X3syfSA9IC0gXGZyYWN7MX17NH0KJCQKCiMjIyBFamVyY2ljaW9zCgpMYSBlY3VhY2nDs24gZXMgJDJ4XjIgKyA4eCA9IDAkLgoKKipMYSBzb2x1Y2lvbiBlczoqKgoKJCQgCjJ4XjIgKyA4eCA9IDBcXAoyeCh4ICsgNCkgPSAwXFwKMnggPSAwXFwKeCA9IDAvMlxcCnhfezF9ID0gMFxcCnggKyA0ID0gMFxcCnggPSAwIC00XFwKeF97Mn0gPSAtNFxcCiQkCgpMYSBlY3VhY2nDs24gZXMgJHheMiAtIFxmcmFjezF9ezR9ID0gMCQKCioqTGEgc29sdWNpw7NuIGVzOioqCgokJAp4XjItXGZyYWN7MX17NH09IDBcXAp4ID0gKy1cc3FydHsgXGZyYWN7MX17NH19XFwKeCA9IFxmcmFjezF9ezJ9XFwKeF97MX0gPSAtMC41XFwKeF97Mn0gPSAwLjUKJCQKCkxhIGVjdWFjacOzbiBlcyAkeF4yLTl4KzE4ID0gMCQKCioqTGEgc29sdWNpw7NuIGVzOioqCgpGw7NybXVsYSBnZW5lcmFsIGVzICR4ID0gXGZyYWN7LWIgKy0gXHNxcnR7Yl4yfSAtIDRhY317MmF9JAoKJCQKYSA9IDEsIGIgPSAtOSwgYyA9IDE4XFwKeCA9IFxmcmFjezkrLVxzcXJ0ey05XjItNCgxKSgxOCl9fXsyKDEpfVxcCnggPSBcZnJhY3s5ICstIFxzcXJ0ezgxLTcyfX17Mn1cXAp4ID0gXGZyYWN7OS0zfXsyfVxcCnhfezF9ID0gNlxcCnhfezF9ID0gM1xcCnhfezJ9ID0gMTJcXAp4X3syfSA9IDYKJCQK</div>
 
 
 
