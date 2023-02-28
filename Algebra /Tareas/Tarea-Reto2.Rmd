@@ -1,29 +1,194 @@
 ---
 title: "Ecuaciones cuadráticas y sistemas de ecuaciones lineales."
-output: pdf_document
-date: "2023-02-27"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+date: ""
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+### Datos de portada
 
-## R Markdown
+|                       |                                                                       |
+|------------------|-----------------------------------------------------|
+| Nombre:               | Cynthia Valeria Sánchez Vilchis                                       |
+| Matrícula:            | 21020858                                                              |
+| Fecha de elaboración: | 27 Febrero 2023                                                       |
+| Nombre del módulo:    | Algebra II V2                                                         |
+| Nombre del reto:      | Resolviendo ecuaciones cuadráticas y sistemas de ecuaciones lineales. |
+| Nombre del asesor:    | Joel Garavito Navarro                                                 |
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Introducción
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+En este reto aplicarás los métodos de resolución de sistemas de ecuaciones lineales y cuadráticas.
 
-```{r cars}
-summary(cars)
-```
+**Instrucciones:** Realiza lo que se te solicita en cada paso.
 
-## Including Plots
+### Método de eliminación por suma y resta.
 
-You can also embed plots, for example:
+Ecuación 1: $30a - 10b = 604$
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+Ecuación 2: $a + 5b = 65$
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+-   Realizamos una multiplicacion a la ecuación #2, para que tenga el mismo coeficiente en b y podamos eliminar.
+
+$$
+2(a + 5b = 65) \\ 2a + 10b = 130
+$$
+
+-   Como tenemos coeficientes iguales, podemos sumar.
+
+$$
+30a - 10b = 604\\
+2a + 10b = 130\\
+32a = 734
+$$
+
+-   Despejamos a
+
+$$
+32a = 734\\
+a = \frac{734}{32}\\
+a = \frac{367}{16}
+$$
+
+-   Sustituimos en la segunda ecuación.
+
+$$
+\frac{367}{16} + 5b = 65\\
+5b = 65 - \frac{367}{16}\\
+5b = \frac{673}{16}\\
+b = \frac{\frac{673}{16}}{\frac{5}{1}}\\
+b = \frac{673}{80}
+$$
+
+### Método gráfico.
+
+Ecuación 1: $2x-y=-1$
+
+Ecuación 2: $-x+y=-1$
+
+**Solución:**
+
+-   Despejamos **y en ambas ecuaciones.**
+
+$$
+y = 1 + 2x \\
+y = -1 + x
+$$
+
+-   Se asignan valores a la variable **x en la primera ecuación.**
+
+$$
+x_{0} = 1 + 2(0) = 1 = (0,1)\\
+x_{2} = 1 + 2(2) = 5 = (2,5)\\
+x_{4} = 1 + 2(4) = 9 = (4,9)
+$$
+
+-   Se asignan valores a la variable **x en la segunda ecuación.**
+
+$$
+x_{0} = -1 + 0 = -1 = (0,-1)\\
+x_{2} = -1 + 2 = 1 = (2,1)\\
+x_{4} = -1 + 4 = 3 = (4,3)
+$$
+
+**Solución y Gráfica:**
+
+$$
+x = -2\\
+y = -3
+$$
+
+![](images/Captura%20de%20pantalla%202023-02-27%20a%20la(s)%200.59.15.png){width="292"}
+
+### Método de Sustitución
+
+Ecuación 1: $1.4x+0.7y=2.8$
+
+Ecuación 2: $-x+y=1.0$
+
+-   Despejamos la variable **y** de la segunda ecuación.
+
+$$
+-x +y=1.0\\
+y = 1.0 + x
+$$
+
+-   Sustituimos el valor de **y** en la primer ecuación.
+
+$$
+1.4x+0.7y =2.8\\
+1.4x+0.7(1.0+x)=2.8\\
+$$
+
+-   Despejamos el valor de la variable complementaria **x.**
+
+$$
+1.4x+0.7+0.7x =2.8\\
+2.1x+0.7=2.8\\
+2.1x=2.8-0.7
+x = \frac{2.1}{2.1}\\
+x=1
+$$
+
+-   Sustituimos el valor de la variable encontrada en la ecuacion que utilizamos.
+
+$$
+-x+y=1.0\\
+-(1)+y=1.0\\
+y =1.0+1
+y = 2.0
+$$
+
+**Solución:**
+
+$$
+x = 1\\
+y = 2
+$$
+
+### Ecuaciones Cuadraticas
+
+-   Fórmula general es $x = \frac{-b+-\sqrt{b^2-4ac}}{2a}$
+
+-   Ecuación 1: $x^2-5x-14=0$
+
+Valores de a, b y c = $a=1, b=-5, c=-14$
+
+Aplicando la fórmula:
+
+$$
+x=\frac{-(-5)+-\sqrt{-5^2-4(1)(-14)}}{2(1)}\\
+x =\frac{5+-\sqrt{25+56}}{2}\\
+x=\frac{5+-\sqrt{81}}{2}\\
+x_{1}=\frac{5+9}{2}\\
+x_{1}=\frac{14}{2}\\
+x_{1}=7\\
+x_{2}=\frac{5-9}{2}\\
+x_{2}=\frac{-4}{2}\\
+x_{2}=-2
+$$
+
+**La solución es:** $x_{1}=7$ y $x2=-2$
+
+-   Ecuación 2: $3x^2-5x-2=0$
+
+Valores de a. b y c= $a=3, b=-5, c=-2$
+
+Aplicando la fórmula:
+
+$$
+x=\frac{-(-5)+-\sqrt{-5^2-4(3)(-2)}}{2(3)}\\
+x=\frac{5+-\sqrt{25+24}}{6}\\
+x=\frac{5+-\sqrt{49}}{6}\\
+x_{1} = \frac{5+7}{6}\\
+x_{1} = \frac{12}{6}\\
+x_{1} = 2\\
+x_{2} = \frac{5-7}{6}\\
+x_{2} = \frac{-2}{6}\\
+x_{2} = \frac{-1}{3}
+$$
+
+**La solución es:** $x_{1}=2$ y $x2=\frac{-1}{3}$
