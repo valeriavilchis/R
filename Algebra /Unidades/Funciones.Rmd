@@ -94,3 +94,31 @@ Es posible expresar gran cantidad de fenómenos a través de funciones como mode
 -   Función exponencial
 
 ![](images/Captura%20de%20pantalla%202023-03-01%20a%20la(s)%201.25.47.png){width="323"}
+
+### Limite de una función
+
+Punto que indica la conclusión de cierta conclusión y este no tiene que ser sobreapsado.
+
+EJ: Tenemos una botella de 1 litro, en la cual deseamos agregar 1.001 litros, estariamos sobrepasando el limite de 1 litro.
+
+Diremos que $f(x)$ tiende al limite $L$ cuando x tiene a $x_{0}$ si se satisface la siguiente condición.
+
+-   Si dado dos números positivos no existe relación entre ellos que son epsilon $\epsilon$ y delta $\delta$, y si para todo valor en x en S se satisface.
+
+-   Si $|x-x_{0}|<\delta$, el valor absoluto de x menos x cero es menor que delta.
+
+-   Si $|f(x)-L|<\epsilon$, el valor absoluto de la funcion de x - L (número natural cualquiera) es menos a epsilon, cumpliendo estas condiciones, podemos decir que el limite existe y generalmente se escribe $f(x)=L$.
+
+Ejemplo:
+
+Tenemos $f(x)=x^2$. S en este ejemplo es un conjunto de numeros) {${-5,-4,-3,-2,-1,1,2,3,4,5}$}
+
+-   Como el valor de la función para $x= 0$ es 0, suponemos que este es el valor de L.
+
+-   S es un conjunto con un número finito de elementos, es más facil comprobbar la existencia del limite. ( de valores definidos en un conjutno)
+
+-   En el conjunto infinito de números reales será más complicado.
+
+-   Primero conozcamos el concepto de limite.
+
+![](images/Captura%20de%20pantalla%202023-03-01%20a%20la(s)%2020.22.15.png){width="346"}
